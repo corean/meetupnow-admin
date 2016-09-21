@@ -1,0 +1,39 @@
+.user {
+  padding: 14px;
+}
+.user > span {
+  line-height: 20px;
+  color: white;
+}
+.user .btn-xs {
+  font-size: 11px;
+  border-style: none;
+  background-color: #A39FEA;
+  color: white;
+}
+
+.user .btn-xs a {
+  color: #605ca8;
+}
+
+.login-logo {
+  font-family: 'Nanum Barun Gothic', sans-serif;
+  font-weight: 300;
+}
+
+.btn-purple {
+  background-color: #605ca8;
+  border-color: #605ca8;
+}
+
+.login-box-body > a {
+  color: #605ca8;
+}
+
+.login-box-body {
+  border-top: 5px solid #605ca8;
+}
+
+.form-control:focus {
+  border-color: #605ca8;
+}
