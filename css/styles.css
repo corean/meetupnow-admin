@@ -37,3 +37,8 @@
 .form-control:focus {
   border-color: #605ca8;
 }
+div.box-footer ul.pagination,
+div.box-footer div.button-group
+{
+  margin: 8px 0;
+}

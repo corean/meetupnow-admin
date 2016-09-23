@@ -7,7 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -133,14 +133,195 @@
     <!-- Main content -->
     <section class="content">
 
-      <!-- Your Page Content Here -->
+      <!-- box 예 -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-info">
+            <div class="box-header">
+              <h3 class="box-title">
+                제목
+              </h3>
+            </div>
+            <div class="box-body">
+              내용
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./box 예 -->
+
+      <!-- 게시판 목록 -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-primary">
+            <div class="box-header">
+              <h3 class="box-title">유아목록</h3>
+
+              <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-right" placeholder="유아 검색">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tr>
+                  <th>ID</th>
+                  <th>User</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Reason</th>
+                </tr>
+                <tr>
+                  <td>183</td>
+                  <td>John Doe</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-success">Approved</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+                <tr>
+                  <td>219</td>
+                  <td>Alexander Pierce</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-warning">Pending</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+                <tr>
+                  <td>657</td>
+                  <td>Bob Doe</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-primary">Approved</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+                <tr>
+                  <td>175</td>
+                  <td>Mike Doe</td>
+                  <td>11-7-2014</td>
+                  <td><span class="label label-danger">Denied</span></td>
+                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                </tr>
+              </table>
+              <!-- CRUD 버튼 -->
+              <div class="box-footer">
+                <div class="box-tools">
+                  <ul class="pagination">
+                    <li class="paginate_button previous disabled" id="example2_previous"><a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0">이전</a></li>
+                    <li class="paginate_button active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0">1</a></li>
+                    <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0">2</a></li>
+                    <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0">3</a></li>
+                    <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0">4</a></li>
+                    <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0">5</a></li>
+                    <li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0">6</a></li>
+                    <li class="paginate_button next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0">이후</a></li>
+                  </ul>
+
+                  <div class="button-group pull-right">
+                    <button class="btn btn-primary"><i class="fa fa-list"> 목록</i></button>
+                    <button class="btn btn-success"><i class="fa  fa-sticky-note-o"> 등록</i></button>
+                    <button class="btn btn-warning"><i class="fa fa-edit"> 수정</i></button>
+                    <button class="btn btn-danger"><i class="fa fa-remove"> 삭제</i></button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
+      <!-- /.게시판 목록 -->
+
+      <!-- box 예 -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-success">
+            <div class="box-header">
+              <h3 class="box-title">
+                유아 등록
+              </h3>
+            </div>
+            <div class="box-body">
+              <div class="col-sm-6">
+                <form role="form">
+                  <div class="form-group">
+                    <label>제목</label>
+                    <input type="text" name="title" class="form-control" placeholder="제목을 입력하세요.">
+                  </div>
+                  <div class="form-group">
+                    <label>내용</label>
+                    <textarea name="body" class="form-control" placeholder="본문을 입력하세요." rows="5"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optonsRadio">
+                      남아
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optonsRadio">
+                      여아
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      체크박스1
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                      체크박스2
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <label>셀렉트 박스</label>
+                    <select class="form-control">
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4</option>
+                      <option>option 5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-footer">
+              <div class="pull-right">
+                <button class="btn btn-success"><i class="fa fa-check"> 유아 등록</i></button>
+              </div>
+              <button class="btn btn-default"><i class="fa fa-times"> 취소</i></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./box 예 -->
+
+
 
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
-  <!-- 푸터 -->
+  <!-- footer -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
@@ -159,6 +340,7 @@
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
 <!-- AdminLTE App -->
 <script src="js/app.js"></script>
 
