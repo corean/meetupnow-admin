@@ -1,3 +1,24 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+   font-family: 'Noto Sans Korean', sans-serif;
+}
+
+.main-header .logo {
+   font-family: 'Noto Sans Korean', sans-serif;
+   font-weight: 300;
+}
+
 .user {
    padding: 14px;
 }
@@ -18,14 +39,34 @@
    color: #462000;
 }
 
+
+/*
 .login-logo {
    font-family: 'Nanum Barun Gothic', sans-serif;
    font-weight: 300;
 }
+*/
 
-.btn-purple {
-   background-color: #605ca8;
-   border-color: #605ca8;
+.login-page {
+   background: url(../img/bg_people.jpg) no-repeat center center fixed;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login-box .btn {
+   font-weight: 500;
+}
+
+.login-box .btn-orange,
+.login-box .btn-orange:visited {
+   background-color: #ff9800;
+   border-color: #ff9800;
+}
+
+.login-box .btn-orange:hover,
+.login-box .btn-orange:active {
+   background-color: #f57c00;
+   border-color: #f57c00;
 }
 
 .login-box-body>a {
@@ -33,14 +74,26 @@
 }
 
 .login-box-body {
-   border-top: 5px solid #605ca8;
+   border-top: 5px solid #f57c00;
 }
 
 .form-control:focus {
-   border-color: #605ca8;
+   border-color: #f57c00;
 }
 
 div.box-footer ul.pagination,
 div.box-footer div.button-group {
    margin: 8px 0;
+}
+
+.side-menu .treeview-menu>li {
+   padding: 4px 0;
+}
+
+.side-menu .treeview-menu>li>a {
+   font-size: 13px;
+}
+
+@media (min-width: 768px) .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+   top: 43px;
 }
